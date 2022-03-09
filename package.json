@@ -11,7 +11,8 @@
     "start": "node dist/app"
   },
   "dependencies": {
-    "fastify": "^3.27.4"
+    "fastify": "^3.27.4",
+    "fastify-helmet": "^7.0.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.17.6",

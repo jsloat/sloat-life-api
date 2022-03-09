@@ -2,19 +2,23 @@
 import "core-js/stable";
 import "regenerator-runtime/runtime";
 import Fastify from "fastify";
+import Helmet from "fastify-helmet";
 
-const fastify = Fastify({ logger: true });
+const app = Fastify({ logger: true });
 
-fastify.get("/", (request, reply) => {
+app.register(Helmet);
+
+app.get("/", (request, reply) => {
   reply.send({ hello: "world" });
 });
 
 const start = async () => {
   try {
-    await fastify.listen(3000);
+    await app.listen(3000);
   } catch (err) {
-    fastify.log.error(err);
+    app.log.error(err);
     process.exit(1);
   }
 };
+
 start();
