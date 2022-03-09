@@ -8,7 +8,7 @@
   "scripts": {
     "build": "source util.sh;build",
     "build-watch": "source util.sh;build_watch",
-    "start": "node dist/app"
+    "start": "source util.sh;build;node dist/app"
   },
   "dependencies": {
     "fastify": "^3.27.4",
