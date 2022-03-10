@@ -8,6 +8,7 @@
   "scripts": {
     "build": "source util.sh;build",
     "build-watch": "source util.sh;build_watch",
+    "cloud-run-build": "babel src --out-dir dist --extensions .ts --delete-dir-on-start",
     "start": "source util.sh;build;node dist/app"
   },
   "dependencies": {
