@@ -8,7 +8,6 @@ RUN npm install --quiet
 COPY . .
 
 # Build app
-SHELL [ "/bin/bash", "-c" ]
 RUN npm run build
 
 # Start app

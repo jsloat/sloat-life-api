@@ -6,9 +6,9 @@
   "license": "ISC",
   "description": "",
   "scripts": {
-    "build": "source util.sh;build",
-    "build-watch": "source util.sh;build_watch",
-    "start": "source util.sh;build;node dist/app"
+    "build": ". ./util.sh;build",
+    "build-watch": ". ./util.sh;build_watch",
+    "start": ". ./util.sh;build;node dist/app"
   },
   "dependencies": {
     "fastify": "^3.27.4",
