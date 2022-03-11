@@ -12,6 +12,7 @@
     "start": "source util.sh;build;node dist/app"
   },
   "dependencies": {
+    "@google-cloud/datastore": "^6.6.2",
     "fastify": "^3.27.4",
     "fastify-helmet": "^7.0.1"
   },
