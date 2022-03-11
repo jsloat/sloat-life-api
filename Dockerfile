@@ -8,7 +8,7 @@ RUN npm install --quiet
 COPY . .
 
 # Build app
-RUN npm run cloud-run-build
+RUN npm run build
 
 # Start app
 EXPOSE $PORT
