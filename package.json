@@ -8,7 +8,8 @@
   "scripts": {
     "build": ". ./util.sh;build",
     "build-watch": ". ./util.sh;build_watch",
-    "start": ". ./util.sh;build;node dist/app"
+    "start": ". ./util.sh;build;node dist/app",
+    "deploy": "git push"
   },
   "dependencies": {
     "@google-cloud/datastore": "^6.6.2",
